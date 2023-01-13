@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div style="text-align: center;padding:0.5rem;background-color:#0081C9">
+        <select name="counties" id="counties">
+            <option value="">GLOBAL</option>
+            <option value="in">INDIA</option>
+            <option value="us">USA</option>
+            <option value="gb">UK</option>
+            <option value="au">AUSTRALIA</option>
+            <option value="ca">CANADA</option>
+            <option value="ae">UAE</option>
+        </select>
+        <select name="categories" id="categories">
+            <option value="">ALL</option>
+            <option value="business">BUSINESS</option>
+            <option value="entertainment">ENTERTAINMENT</option>
+            <option value="general">GENERAL</option>
+            <option value="health">HEALTH</option>
+            <option value="science">SCIENC</option>
+            <option value="sports">SPORTS</option>
+            <option value="technology">TECHNOLOGY</option>
+        </select>
+        <button id="search">SEARCH</button>
+    </div><br/>
+
+    <div id="content"></div>
+
+   <!--Script-->
+   <script src='./index.js' type="module"></script>
+</body>
+</html>

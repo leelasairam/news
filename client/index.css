@@ -1,0 +1,21 @@
+body{
+    background-color: #EEEEEE;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-style1{
+    background-color:#FEC868;
+    padding:0.5rem;
+}
+
+.card-style2{
+    background-color:#FDA769;
+    padding:0.5rem;
+}
+
+#content {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1rem;
+}
