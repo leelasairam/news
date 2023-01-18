@@ -9,7 +9,7 @@ require('dotenv').config();
 const newsapi = new NewsAPI(process.env.API_KEY);
 
 app.use(cors({
-    origin: ["http://127.0.0.1:5500","http://localhost:5500","https://get-global-news.netlify.app"]
+    origin: "https://get-global-news.netlify.app"
 }));
 
 app.get('/', async(req, res) => {

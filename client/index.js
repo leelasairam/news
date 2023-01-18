@@ -1,13 +1,13 @@
 let count = 0;
-let html =``;
 let ClassName;
 let Default_Img = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fworld-news&psig=AOvVaw0ekkjaed_BI66AiJkuI9G7&ust=1673690215473000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKCb0oekxPwCFQAAAAAdAAAAABAM';
 
 async function ServerFetch(){
+    let html =``;
     document.querySelector("#content").innerHTML='Loading...';
     let country = document.querySelector("#counties").value;
     let category = document.querySelector("#categories").value;
-    let response = await fetch(`http://localhost:8000/?country=${country}&category=${category}`);
+    let response = await fetch(`https://news-5fvb.onrender.com/?country=${country}&category=${category}`);
     console.log(`http://localhost:8000/?country=${country}&category=${category}`)
     let data = await response.json();
     //console.log(data);
